@@ -2,9 +2,9 @@
 - 使用iso镜像装系统
 
 1. virsh-install 
-	```bash
-	virt-install  --name=centos-basic --ram 512 --vcpus=2 --arch=x86_64 --os-type=linux --disk path=/home/ubuntu/centos-basic.qcow2,device=disk,bus=virtio,format=qcow2 --accelerate --cdrom /home/ubuntu/CentOS-7-x86_64-DVD-1511.iso --graphics vnc --network bridge=br0 --force --autostart
-	```
+```bash
+virt-install  --name=centos-basic --ram 512 --vcpus=2 --arch=x86_64 --os-type=linux --disk path=/home/ubuntu/centos-basic.qcow2,device=disk,bus=virtio,format=qcow2 --accelerate --cdrom /home/ubuntu/CentOS-7-x86_64-DVD-1511.iso --graphics vnc --network bridge=br0 --force --autostart
+```
 
 2. 使用vnc连接装系统
 >遇到问题，连接后闪退
